@@ -1,4 +1,4 @@
-package aliyar.mostafa.project.objects.lagical;
+package aliyar.mostafa.project.objects.controller;
 
 public enum Unit {
     PUBLIC(500),

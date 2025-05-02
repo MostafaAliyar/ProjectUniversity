@@ -1,4 +1,4 @@
-package aliyar.mostafa.project.objects.lagical;
+package aliyar.mostafa.project.objects.view;
 
 public enum Massage {
     WELCOME("به نرم افزار دانشگاه خوش آمدید!"),
@@ -28,8 +28,23 @@ public enum Massage {
     GET_MONTH_STUDENT("لطفا ماه تولد دانشجو را وارد کنید"),
     GET_DAY_STUDENT("لطفا روز تولد دانشجو را وارد کنید"),
     CREATE_STUDENT_DONE("دانشجو با موفقیت ثبت شد!"),
-
-    ;
+    TEACHER_MENU("منو امور اساتید" + System.lineSeparator()+
+            "1) ثبت اطلاعات استاد" +System.lineSeparator()+
+            "2) حذف استاد" +System.lineSeparator()+
+            "3) ویرایش اطلاعات استاد" +System.lineSeparator()+
+            "4) نمایش لیست اساتید" +System.lineSeparator()+
+            "0) بازگشت"),
+    ERROR_INPUT("اطلاعات وارد شده اشتباه است دوباره سعی کنید!"),
+    TITEL_CREATE_TEACHER("به صفحه ساخت استاد خوش آمدید !")
+    , GET_NAME_TEACHER("لطفا نام استاد را به صورت کامل وارد کنید؟"),
+    GET_COD_MELI_TEACHER("لطفا کد ملی استاد را وارد کنید"),
+    GET_YEAR_TEACHER("لطفا سال تولد استاد را به میلادی وارد کنید"),
+    GET_MONTH_TEACHER("لطفا ماه تولد استاد را وارد کنید"),
+    GET_DAY_TEACHER("لطفا روز تولد استاد را وارد کنید"), ERROR_404_STUDENT("دانشجو یافت نشد دوباره سعی کنید!"),
+    STUDENT_MENU_DU("با اسفاده از کدام ویژگی میخواهید برای دانشجو عملیات انجام دهید" +
+            System.lineSeparator()+"1) کد ملی" +
+            System.lineSeparator()+ "2) نام دانشجو" +
+            System.lineSeparator()+ "0)بازگشت"), DELETE_STUDENT("دانشجو با موفقیت حذف شد!"), UPDATE_STUDENT("اطلاعات دانشجو با موفقیت تغیر کرد!");
 
 
     private String message;
