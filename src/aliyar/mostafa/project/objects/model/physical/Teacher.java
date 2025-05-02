@@ -5,7 +5,7 @@ import aliyar.mostafa.project.objects.model.logical.Lessons.Orginal.Lesson;
 
 import java.util.Date;
 
-public class Teacher extends aliyar.mostafa.project.objects.physical.Persen {
+public class Teacher extends Persen {
     private Lesson[] lessons ;
 
     public Teacher(String name, int codMeli, Date birthday) {

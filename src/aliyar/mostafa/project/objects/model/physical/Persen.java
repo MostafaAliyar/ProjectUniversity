@@ -1,4 +1,4 @@
-package aliyar.mostafa.project.objects.physical;
+package aliyar.mostafa.project.objects.model.physical;
 
 import java.util.Date;
 
