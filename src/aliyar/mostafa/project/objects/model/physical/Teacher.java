@@ -1,7 +1,7 @@
 package aliyar.mostafa.project.objects.model.physical;
 
 
-import aliyar.mostafa.project.objects.model.logical.Lessons.Orginal.Lesson;
+import aliyar.mostafa.project.objects.model.logical.Lessons.Sup.Lesson;
 
 import java.util.Date;
 

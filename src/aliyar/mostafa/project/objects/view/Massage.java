@@ -22,6 +22,7 @@ public enum Massage {
             "4) نمایش لیست دانشجویان" +System.lineSeparator()+
             "0) بازگشت به منو قبل"),
     NO_CAPACITY_STUDENT("ضرفیت برای ایجاد دانشجوی جدید وجود ندارد!"),
+    NO_CAPACITY_TEACHER("ضرفیت برای ایجاد استاد جدید وجود ندارد!"),
     GET_NAME_STUDENT("لطفا نام کامل دانشجو را وارد کنید"),
     GET_COD_MELI_STUDENT("لطفا کد ملی دانشجو را وارد کنید"),
     GET_YEAR_STUDENT("لطفا سال تولد دانشجو را به میلادی وارد کنید"),

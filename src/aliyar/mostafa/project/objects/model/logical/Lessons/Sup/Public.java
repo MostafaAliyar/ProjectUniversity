@@ -1,4 +1,4 @@
-package aliyar.mostafa.project.objects.model.logical.Lessons.Orginal;
+package aliyar.mostafa.project.objects.model.logical.Lessons.Sup;
 
 import aliyar.mostafa.project.objects.controller.Unit;
 

@@ -1,7 +1,7 @@
 package aliyar.mostafa.project.objects.model.logical.Lessons.Sub;
 
 import aliyar.mostafa.project.objects.controller.Unit;
-import aliyar.mostafa.project.objects.model.logical.Lessons.Orginal.Public;
+import aliyar.mostafa.project.objects.model.logical.Lessons.Sup.Public;
 
 public class Math extends Public {
     private final int ID = 01;
