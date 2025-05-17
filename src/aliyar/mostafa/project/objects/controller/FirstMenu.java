@@ -12,9 +12,10 @@ import static aliyar.mostafa.project.objects.controller.TeacherMenu.showTeacherM
 
 public class FirstMenu extends MainMenu {
 
-    public FirstMenu(Scanner scanner, Student[] students, Teacher[] teachers) {
-        super(scanner, students, teachers);
+    public FirstMenu(Scanner scanner) {
+        super(scanner);
     }
+
 
     public void start (){
         showMainMenu();

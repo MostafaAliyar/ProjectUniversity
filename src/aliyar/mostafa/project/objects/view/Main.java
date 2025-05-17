@@ -1,30 +1,30 @@
 package aliyar.mostafa.project.objects.view;
 
 import aliyar.mostafa.project.objects.controller.FirstMenu;
+import aliyar.mostafa.project.objects.controller.PersonController;
 import aliyar.mostafa.project.objects.model.physical.Student;
 import aliyar.mostafa.project.objects.model.physical.Teacher;
 import java.util.Scanner;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
-    private static Student[] students;
-
+    static PersonController personController;
     public static void main(String[] args) {
         firstQuestion();
     }
 
     private static void firstQuestion() {
-        int number;
+        int numberStudent;
+        int numberTeacher;
         System.out.println(Massage.WELCOME.getMessage());
         System.out.println(Massage.GET_NUMBER_STUDENT.getMessage());
-        number = scanner.nextInt();
-        students = new Student[number];
+        numberStudent = scanner.nextInt();
         System.out.println(Massage.GET_NUMBER_TEACHER.getMessage());
-        number = scanner.nextInt();
-        Teacher[] teachers = new Teacher[number];
-        System.out.println("دانشگاه با ضرفیت "+students.length+" دانشجو و "+teachers.length+ "تعداد استاد ایجاد شد.");
+        numberTeacher = scanner.nextInt();
+        personController = new PersonController(new Student[numberStudent],new Teacher[numberTeacher]);
+        System.out.println("دانشگاه با ضرفیت "+PersonController.students.length+" دانشجو و "+PersonController.teachers.length+ "تعداد استاد ایجاد شد.");
         System.out.println(Massage.LINE.getMessage());
-        FirstMenu firstMenu = new FirstMenu(scanner,students,teachers);
+        FirstMenu firstMenu = new FirstMenu(scanner);
         firstMenu.start();
         System.out.println(Massage.LINE.getMessage());
     }

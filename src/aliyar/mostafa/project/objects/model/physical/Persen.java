@@ -30,11 +30,5 @@ public abstract class Persen {
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
-    public static int checkCapacity(Persen[] persen) {
-        for (int i = 0; i < persen.length; i++) {
-            if (persen[i]==null)
-                return i;
-        }
-        return -1;
-    }
+
 }

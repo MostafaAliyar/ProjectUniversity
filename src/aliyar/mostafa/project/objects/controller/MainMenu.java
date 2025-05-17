@@ -11,12 +11,8 @@ import java.util.Scanner;
 
 public abstract class MainMenu {
     protected static Scanner scanner ;
-    protected static Student[] students ;
-    protected static Teacher[] teachers ;
-        MainMenu(Scanner scanner, Student[] students, Teacher[] teachers) {
+        MainMenu(Scanner scanner) {
             this.scanner = scanner;
-            this.students = students;
-            this.teachers = teachers;
         }
 
 }
