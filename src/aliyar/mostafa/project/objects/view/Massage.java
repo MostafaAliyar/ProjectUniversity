@@ -24,7 +24,7 @@ public enum Massage {
     NO_CAPACITY_STUDENT("ضرفیت برای ایجاد دانشجوی جدید وجود ندارد!"),
     NO_CAPACITY_TEACHER("ضرفیت برای ایجاد استاد جدید وجود ندارد!"),
     GET_NAME_STUDENT("لطفا نام کامل دانشجو را وارد کنید"),
-    GET_COD_MELI_STUDENT("لطفا کد ملی دانشجو را وارد کنید"),
+    GET_COD_MELI_PERSON("لطفا کد ملی مخاطب را وارد کنید"),
     GET_YEAR_STUDENT("لطفا سال تولد دانشجو را به میلادی وارد کنید"),
     GET_MONTH_STUDENT("لطفا ماه تولد دانشجو را وارد کنید"),
     GET_DAY_STUDENT("لطفا روز تولد دانشجو را وارد کنید"),
@@ -43,13 +43,34 @@ public enum Massage {
     GET_MONTH_TEACHER("لطفا ماه تولد استاد را وارد کنید"),
     GET_DAY_TEACHER("لطفا روز تولد استاد را وارد کنید"),
     ERROR_404_PERSON("مخاطب یافت نشد دوباره سعی کنید!"),
-    STUDENT_MENU_DU("با اسفاده از کدام ویژگی میخواهید برای دانشجو عملیات انجام دهید" +
+    PERSON_MENU_DU("با اسفاده از کدام ویژگی میخواهید برای مخاطب عملیات انجام دهید" +
             System.lineSeparator()+"1) کد ملی" +
-            System.lineSeparator()+ "2) نام دانشجو" +
+            System.lineSeparator()+ "2) نام مخاطب" +
             System.lineSeparator()+ "0)بازگشت"),
     DELETE_PERSON("مخاطب با موفقیت حذف شد!"),
     UPDATE_PERSON("اطلاعات مخاطب با موفقیت تغیر کرد!"),
-    CREATE_TEACHER_DONE("استاد با موفقیت ثبت نام شد!");
+    CREATE_TEACHER_DONE("استاد با موفقیت ثبت نام شد!"),
+    LESSONS_MENU("منو امور دروس " +System.lineSeparator()+
+            "1) ایجاد درس" +System.lineSeparator()+
+            "2) حذف درس" +System.lineSeparator()+
+            "3) ویرایش اطلاعات درس" +System.lineSeparator()+
+            "4) نمایش لیست دروس" +System.lineSeparator()+
+            "0) بازگشت به منو قبل"),
+    GET_NUMBER_LESSON("چند درس برای این ترم میخواهید ارائه دهید"),
+    LESSONS_SELECT_TITLE_MENU("زیر دسته کدام درس میخواهید کلاس ایجاد کنید؟" + System.lineSeparator() +
+            "1) دروس عمومی" + System.lineSeparator() +
+            "2) دروس تخصصی کامپیوتر" + System.lineSeparator() +
+            "3)دروس تخصصی معماری" + System.lineSeparator()+
+            "0)بازکشت به منو قبلی"),
+    NO_CAPACITY_LESSON("ضرفیت برای ایجاد درس جدید به پایان رسیده است."),
+    GET_NAME_LESSON("لطفا نام در را به صورت کامل بنویسد."),
+    CREATE_LESSON_DONE("درس با موفقیت اضافه شد."),
+    ERROR_404_LESSON("درسی با این نام یافت نشد!"),
+    LESSONS_SELECT_UPDATE_MENU("منو تغیرات درس :" + System.lineSeparator() +
+            "1) تعریف درس برای استاد" + System.lineSeparator() +
+            "2) مدیریت ضرفیت کلاس" + System.lineSeparator() +
+            "0)بازکشت به منو قبلی");
+
 
 
     private String message;

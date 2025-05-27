@@ -1,17 +1,17 @@
-package aliyar.mostafa.project.objects.controller;
+package aliyar.mostafa.project.objects.view;
 
-import aliyar.mostafa.project.objects.view.Massage;
+import aliyar.mostafa.project.objects.controller.PersonController;
+import aliyar.mostafa.project.objects.controller.Status;
 
 import java.util.Scanner;
 
 import static aliyar.mostafa.project.objects.controller.PersonController.showListPerson;
 
-public final class StudentMenu extends FirstMenu{
-    private static PersonController personController ;
+public final class StudentMenu extends FirstMenu {
     StudentMenu(Scanner scanner) {
         super(scanner);
     }
-     static void showStudentMenu() {
+     public static void showStudentMenu() {
         System.out.println(Massage.LINE.getMessage());
         System.out.println(Massage.STUDENT_MENU.getMessage());
         studentMenu(scanner.nextInt());
@@ -24,7 +24,7 @@ public final class StudentMenu extends FirstMenu{
             case 1:
                 int capacityIndex = PersonController.checkCapacity(PersonController.students);
                 if (capacityIndex>=0){
-                    personController.createStudent(capacityIndex,scanner);
+                    PersonController.createStudent(capacityIndex,scanner);
                 }else {
                     System.out.println(Massage.NO_CAPACITY_STUDENT.getMessage());
                     showStudentMenu();

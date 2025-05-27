@@ -1,14 +1,10 @@
-package aliyar.mostafa.project.objects.controller;
-
-import aliyar.mostafa.project.objects.model.physical.Student;
-import aliyar.mostafa.project.objects.model.physical.Teacher;
-import aliyar.mostafa.project.objects.view.Massage;
+package aliyar.mostafa.project.objects.view;
 
 import java.util.Scanner;
 
-import static aliyar.mostafa.project.objects.controller.StudentMenu.showStudentMenu;
-import static aliyar.mostafa.project.objects.controller.TeacherMenu.showTeacherMenu;
-
+import static aliyar.mostafa.project.objects.controller.LessonMenu.showLessonsMenu;
+import static aliyar.mostafa.project.objects.view.StudentMenu.showStudentMenu;
+import static aliyar.mostafa.project.objects.view.TeacherMenu.showTeacherMenu;
 
 public class FirstMenu extends MainMenu {
 
@@ -35,6 +31,9 @@ public class FirstMenu extends MainMenu {
                 break;
             case 2:
                 showTeacherMenu();
+                break;
+            case 3:
+                showLessonsMenu();
                 break;
         }
     }

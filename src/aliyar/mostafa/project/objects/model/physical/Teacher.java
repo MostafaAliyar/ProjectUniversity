@@ -1,8 +1,5 @@
 package aliyar.mostafa.project.objects.model.physical;
-
-
-import aliyar.mostafa.project.objects.model.logical.Lessons.Sup.Lesson;
-
+import aliyar.mostafa.project.objects.model.lessons.Lesson;
 import java.util.Date;
 
 public class Teacher extends Persen {

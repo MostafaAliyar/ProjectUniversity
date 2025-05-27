@@ -1,16 +1,17 @@
-package aliyar.mostafa.project.objects.controller;
+package aliyar.mostafa.project.objects.view;
 
-import aliyar.mostafa.project.objects.view.Massage;
+import aliyar.mostafa.project.objects.controller.PersonController;
+import aliyar.mostafa.project.objects.controller.Status;
 
 import java.util.Scanner;
 
 import static aliyar.mostafa.project.objects.controller.PersonController.showListPerson;
 
-public final class TeacherMenu extends FirstMenu{
+public final class TeacherMenu extends FirstMenu {
     public TeacherMenu(Scanner scanner) {
         super(scanner);
     }
-    static void showTeacherMenu() {
+    public static void showTeacherMenu() {
         System.out.println(Massage.LINE.getMessage());
         System.out.println(Massage.TEACHER_MENU.getMessage());
         teacherMenu(scanner.nextInt());

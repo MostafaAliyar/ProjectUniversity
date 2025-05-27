@@ -2,7 +2,7 @@ package aliyar.mostafa.project.objects.controller;
 
 public enum Status {
     DELETE(false),UPDATE(true);
-    private boolean status;
+    private final boolean status;
      Status (boolean status){
          this.status = status;
      }
